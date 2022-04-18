@@ -1,8 +1,10 @@
-.nav{
-  background-color: inherit;
+nav{
+  background-color: bisque;
   text-align: center;
-  padding: 5px;
-  margin: 0px;
-  font-size: 15px;
+  /* padding: 5px; */
+  font-size: 10px;
   font-weight:bolder ;
+  left:0; right: 0; top: 0; 
+  position: fixed;
+
 }
