@@ -6,67 +6,74 @@
   <app-not-found></app-not-found>
 </div> -->
 <div class="panel-body">
-
-  <div class="search">
+<app-search></app-search>
+  <!-- <div class="search">
     <br><span> Search </span>
     <input type="text" name="search" id="search" placeholder="User/Repo">
-  </div>
-
+  </div> -->
+<hr>
 <div *ngIf="user">
   <div class="row">
-      <div class="col-md-08">
+    <div class="col-md-08">
+      <div class="box2">
+      <p> {{ user.name }}
+  </div>
+
+      <div class="col-md-08" >
+        <div class="box1">
         <img class="img-thumbnail github-avatar"
           src="{{ user.avatar_url }} "
         />
       </div>
-        <div class="col-md-08">
-        <h3> {{ user.name }}</h3> 
     </div>
-
+    
       <div class="col-md-08">
-        <span>Public Repos:</span>
-      <span class="badge text-info"
-      >{{ user.public_repos }}
-    </span>
+        <p> Public Repos: 
+           <span class="badge text-info">{{ user.public_repos }}
+      </span>
   </div>
+
   <div class="col-md-08">
-    <span>Followers:</span>
+    <p>Followers:
     <span class="badge  text-info"
     >{{ user.followers }}
   </span>
- 
 </div>
+
 <div class="col-md-08">
-  <span>Follows:</span>
+  <p>Follows:
   <span class="badge text-info"
   >{{ user.following }}
 </span>
 
 </div>
 <div class="col-md-08">
-  <span>Location:</span>
+  <p>Location:
   <span class="badge text-info"
   >{{ user.location }}
 </span>
 </div>
 <div class="col-md-08">
-  <span>Member since:</span>
+  <p>Member since:
   <span class="badge  text-info"
   >{{ user.created_at | date: "mediumDate"  }}
 </span>
 <div>
-  <div class="col-md-08">
-  <span>Website: </span>
-  <span class="badge  text-info"
+
+  <p>Website:
+    <span class="badge  text-info"
     ><a href="{{user.blog}}"> {{ user.blog }}</a>
   </span>
+  <div>
 </div>
 </div>
 </div>
-
+</div>
+</div>
+<hr>
 <h5>Repos</h5>
 
-<div class="panel-body">
+<div class=" container panel-body">
 <div class="row">
   <div class="col-md-12">
     <div *ngFor="let repo of repos">
@@ -95,10 +102,10 @@
           </div>
         </div>
       </div>
-      <hr />
+      <hr>
     </div>
   </div>
 </div>
-</div>
+</div> 
 </div>
 

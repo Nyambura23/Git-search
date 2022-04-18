@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { AppNotFoundComponent } from './app-not-found/app-not-found.component';
 import { UserNotFoundDirective } from './user-not-found.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UserNotFoundDirective } from './user-not-found.directive';
     HeaderComponent,
     SearchComponent,
     AppNotFoundComponent,
-    UserNotFoundDirective
+    UserNotFoundDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

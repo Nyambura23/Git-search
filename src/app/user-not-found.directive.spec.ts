@@ -1,8 +1,15 @@
-import { UserNotFoundDirective } from './user-not-found.directive';
+import { from } from 'rxjs';
+// import { UserNotFoundDirective } from './user-not-found.directive';
+import { Directive, ElementRef, Renderer2, OnInit } from '@angular/core'
 
-describe('UserNotFoundDirective', () => {
-  it('should create an instance', () => {
-    const directive = new UserNotFoundDirective();
-    expect(directive).toBeTruthy();
-  });
-});
+@Directive({
+  selector: '[appUserNotFound]',
+})
+
+export class UserNotFoundDirective implements OnInit {
+  constructor(private elRef: ElementRef, private renderer: Renderer2) {}
+
+  ngOnInit(): void {
+    this.renderer.setStyle(this.elRef.nativeElement, 'display', 'none');
+  }
+}

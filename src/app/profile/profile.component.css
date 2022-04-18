@@ -1,5 +1,5 @@
 
-.search{
+/* .search{
   margin: 30px auto;
   text-align: center;
   font-size: 18px;
@@ -11,11 +11,12 @@
   padding: 5px 10px;
   margin-top: 5px;
 
-}
+} */
 
-.img-thumbnail{
-  height: 100px;
+.github-avatar{
+  height: 200px;
   border-radius: 50%;
+  object-fit:cover;
  
 }
 
@@ -25,8 +26,17 @@
 
 }
 
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
 .col-md-08{
 text-align: center;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: space-evenly;
+
 }
 
 h3{
