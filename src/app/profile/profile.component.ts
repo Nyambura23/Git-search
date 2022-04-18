@@ -18,7 +18,7 @@ export class ProfileComponent implements OnInit {
   error: any = null;
   
 
-
+ 
   constructor(private userService: UserService) { }
   search(searchTerm: string) {
     if (searchTerm !== '') {

@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { AppNotFoundComponent } from './app-not-found/app-not-found.component';
+import { UserNotFoundDirective } from './user-not-found.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AppNotFoundComponent } from './app-not-found/app-not-found.component';
     ProfileComponent,
     HeaderComponent,
     SearchComponent,
-    AppNotFoundComponent
+    AppNotFoundComponent,
+    UserNotFoundDirective
   ],
   imports: [
     BrowserModule,
