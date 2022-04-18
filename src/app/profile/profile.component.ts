@@ -3,6 +3,7 @@ import { UserService } from '../user.service';
 import { User } from '../user';
 import { Repo } from '../repo';
 import { catchError } from 'rxjs';
+import { NgModule } from '@angular/core';
 
 
 @Component({

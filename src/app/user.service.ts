@@ -14,6 +14,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
+  getOutput: any;
 
   constructor(private http:HttpClient) { }
 
