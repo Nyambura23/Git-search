@@ -8,5 +8,54 @@
 <!-- </div> -->
 
 <div *ngIf="user">
-  
+  <div class="row">
+    <div class="col-md-08">
+    <h3> {{ user.name }}</h3>
+      <div class="col-md-08">
+        <img
+          class="img-thumbnail github-avatar"
+          src="{{ user.avatar_url }}"
+        />
+      </div>
+      <div class="col-md-08">
+        <span>Public Repos:</span>
+      <span class="badge bg-primary text-info"
+      >{{ user.public_repos }}
+    </span>
+   
+  </div>
+  <div class="col-md-08">
+    <span>Followers:</span>
+    <span class="badge bg-success text-info"
+    >{{ user.followers }}
+  </span>
+ 
+</div>
+<div class="col-md-08">
+  <span>Follows:</span>
+  <span class="badge bg-danger text-info"
+  >{{ user.following }}
+</span>
+
+</div>
+<div class="col-md-08">
+  <span>Location:</span>
+  <span class="badge bg-info text-info"
+  >{{ user.location }}
+</span>
+</div>
+<div class="col-md-08">
+  <span>Member since:</span>
+  <span class="badge bg-secondary text-info"
+  >{{ user.created_at | date: "mediumDate"  }}
+</span>
+
+<div>
+  <span>Website: </span>
+  <span class="badge bg-warning text-info"
+    ><a href="{{user.blog}}"> {{ user.blog }}</a>
+  </span>
+</div>
+
+</div>
 </div>

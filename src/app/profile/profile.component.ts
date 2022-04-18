@@ -15,6 +15,7 @@ export class ProfileComponent implements OnInit {
   repos: any;
   repo!: Repo;
   error: any = null;
+  
 
 
   constructor(private userService: UserService) { }
@@ -35,5 +36,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     this.search('Nyambura23');
   }
+  
+   
 
 }
