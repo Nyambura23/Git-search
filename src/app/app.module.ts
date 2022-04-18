@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
+import { AppNotFoundComponent } from './app-not-found/app-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     HeaderComponent,
-    SearchComponent
+    SearchComponent,
+    AppNotFoundComponent
   ],
   imports: [
     BrowserModule,

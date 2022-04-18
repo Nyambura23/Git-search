@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { User } from '../user';
 import { Repo } from '../repo';
+import { catchError } from 'rxjs';
 
 @Component({
   selector: 'app-profile',
