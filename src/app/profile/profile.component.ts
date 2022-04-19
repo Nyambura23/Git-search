@@ -36,6 +36,10 @@ export class ProfileComponent implements OnInit {
     }
   }
 
+  // findProfile(){
+  //   this.userService.updateProfile(this.username);
+  // }
+
   ngOnInit(): void {
     this.search('Nyambura23');
   }

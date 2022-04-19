@@ -1,21 +1,21 @@
-<app-header></app-header>
+<!-- <app-header></app-header> -->
 <div class="panel-body">
-<form action="" class="search-form">
+<!-- <form action="" class="search-form">
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Username" [(ngModel)]="profile" name="username" (keyup.enter)="search(profile)">
+    <input type="text" class="form-control" placeholder="Username" [(ngModel)]="profile" (keyup.enter)="search(profile)">
   </div>
-</form>
+</form> -->
+<div class="container">
+<div class="search-form">
+  <span>GIT SEARCH</span>
+    <input type="text" placeholder="Username" class="form-control d-flex justify-content-center text-center" [(ngModel)]="profile" (keyup.enter)="search(profile)" />
 
+</div>
+</div>
 <!-- <div *ngIf="error">
   <app-not-found></app-not-found>
 </div> -->
-
-<!-- <app-search></app-search> -->
-  <div class="search">
-    <br><span> Search </span>
-    <input type="text" name="search" id="search" placeholder="Username">
-  </div>
-<hr>
+<hr> 
 <div *ngIf="user">
   <div class="row">
     <div class="col-md-08">

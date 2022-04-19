@@ -15,8 +15,12 @@ const httpOptions = {
 })
 export class UserService {
   getOutput: any;
+  username: string;
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) { 
+    this.username= 'Nyambura23'
+  }
+
 
   getUserInfo(userName: string): Observable<any> {
       const url = `https://api.github.com/users/${userName}`;
@@ -25,6 +29,10 @@ export class UserService {
     getRepo(userName: string): Observable<any> {
       const url = `https://api.github.com/users/${userName}/repos`;
       return this.http.get<any>(url, httpOptions);
+    }
+
+    updateProfile(username:string){
+      this.username=username;
     }
 
   }
