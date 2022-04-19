@@ -11,6 +11,7 @@ import { searchComponent } from './search/search.component';
 import { AppNotFoundComponent } from './app-not-found/app-not-found.component';
 import { UserNotFoundDirective } from './user-not-found.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightRepositoryDirective } from './highlight-repository.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DateCountPipe } from './date-count.pipe';
     AppNotFoundComponent,
     UserNotFoundDirective,
     DateCountPipe,
+    HighlightRepositoryDirective,
    
   ],
   imports: [
