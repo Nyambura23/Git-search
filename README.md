@@ -1,27 +1,33 @@
-# GitSearch
+# Git-Search
+A quotes application built on Angular CLI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+#### By Nyambura Bianca
 
-## Development server
+## Description
+This project features an application where users can search for users on github and view their details as well as their repositories.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## How to set it up
+Open terminal or a similar app on your computer
 
-## Code scaffolding
+Change directory to Desktop
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Copy https://github.com/Nyambura23/Git-search
 
-## Build
+Use git clone and paste that link after it to clone the repository
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run ng serve to view the site, you can edit the source files to reflect new changes that you would like to see
 
-## Running unit tests
+## Known Bugs
+No known bugs as at now
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
+Its an angular app built using HTML, CSS ,Typescript and Javascript
 
-## Running end-to-end tests
+## Support and contact details
+You can reach me on email: nyambura.bianca23@gmail.com, incase you run into any issues or would like to make a contribution to the code.
+You can also check out angular.io,the official angular site, for any information and updates regarding angular
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### License
+This site is licensed under MIT License
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Copyright (c) 2022 Nyambura Bianca
