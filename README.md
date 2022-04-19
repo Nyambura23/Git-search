@@ -1,10 +1,10 @@
 # Git-Search
-A quotes application built on Angular CLI
+A github search application built on Angular CLI.
 
 #### By Nyambura Bianca
 
 ## Description
-This project features an application where users can search for users on github and view their details as well as their repositories.
+This project features an application where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositoriesies.
 
 ## How to set it up
 Open terminal or a similar app on your computer
